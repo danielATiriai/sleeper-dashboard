@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  body {
+    @apply bg-ink-950 text-chalk font-sans antialiased;
+    background-image: radial-gradient(
+        1200px 600px at 80% -10%,
+        rgba(61, 220, 151, 0.06),
+        transparent 60%
+      ),
+      radial-gradient(900px 500px at -10% 10%, rgba(76, 194, 255, 0.05), transparent 55%);
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-ink-700 rounded-full;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-ink-900/80 border border-ink-700/70 rounded-xl2 shadow-card backdrop-blur-sm;
+  }
+  .card-pad {
+    @apply p-4 sm:p-5;
+  }
+  .stat {
+    @apply font-mono tabular-nums;
+  }
+  .pill {
+    @apply inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-medium;
+  }
+  .nav-link {
+    @apply flex items-center gap-2.5 rounded-lg px-3 py-2 text-sm text-chalk-dim transition-colors hover:bg-ink-800 hover:text-chalk;
+  }
+  .nav-link-active {
+    @apply bg-ink-800 text-chalk shadow-[inset_2px_0_0_0_theme(colors.gridiron)];
+  }
+  .th {
+    @apply text-left text-[11px] font-semibold uppercase tracking-wider text-chalk-faint;
+  }
+}

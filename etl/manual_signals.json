@@ -1,0 +1,5 @@
+{
+  "_doc": "Operator-maintained, best-effort offseason signals. These are PROJECTIONS, shown with a 'projected' badge in the UI. Leave empty rather than guess. Populate scheme_changes with confirmed coaching/OC/scheme changes that affect rostered players' 2026 outlook.",
+  "_example": {"team": "CHI", "note": "new OC, pass-heavier scheme", "kind": "OC"},
+  "scheme_changes": []
+}

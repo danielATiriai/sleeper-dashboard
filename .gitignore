@@ -1,0 +1,19 @@
+# Python
+etl/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# ETL caches & large intermediates (raw API/nflverse pulls are re-fetchable)
+etl/raw/
+etl/cache/
+
+# Node / web
+web/node_modules/
+web/dist/
+web/.vite/
+
+# OS / editor / local tooling
+.DS_Store
+*.log
+.claude/
